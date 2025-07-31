@@ -14,7 +14,7 @@ folder = "/Users/giorgiomantero/Documents/UniGio/Tesi/tesi-dashboardgit/"
 geojson_path = folder + "limiti_province_italia.geojson"
 
 # Carica CSV
-df = pd.read_csv(folder + "Lista_incubatori_categorie.csv")
+df = pd.read_csv('Lista_incubatori_categorie.csv')
 df.loc[df['comune'].str.upper() == "NAPOLI", 'pv'] = "NA"
 
 df = df.drop(columns=[col for col in ["codice fiscale", "settore", "sito internet", "attività", "ateco 2007"] if col in df.columns])
@@ -47,7 +47,7 @@ df["area_geografica"] = df["pv"].apply(area_geografica)
 
 # === GeoJSON ===
 def load_geojson(path):
-    with open(path, encoding="utf-8") as f:
+    with open("limiti_province_italia.geojson", encoding="utf-8") as f:
         return json.load(f)
 
 gj_province = load_geojson(geojson_path)
