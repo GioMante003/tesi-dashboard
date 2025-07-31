@@ -10,7 +10,7 @@ from dash import callback, Input, Output, State, ctx, no_update
 
 
 # === Percorso dati ===
-folder = "/Users/giorgiomantero/Documents/UniGio/Tesi/dashboard/"
+folder = "/Users/giorgiomantero/Documents/UniGio/Tesi/tesi-dashboardgit/"
 geojson_path = folder + "limiti_province_italia.geojson"
 
 # Carica CSV
