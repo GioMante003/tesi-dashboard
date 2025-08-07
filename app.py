@@ -144,7 +144,7 @@ app.layout = dbc.Container([
             dbc.Card([
             dbc.CardHeader(
                 dbc.Row([
-                    dbc.Col(html.Span("Distribuzione per Classe Selezionata", style=header_style), width="auto"),
+                    dbc.Col(html.Span("Distribuzione per Categoria", style=header_style), width="auto"),
                     dbc.Col(
                         dbc.Button("ℹ️ Categorie", id="popover-target2", color="secondary", size="sm", outline=True),
                         width="auto", style={'marginLeft': 'auto'}
@@ -173,7 +173,7 @@ app.layout = dbc.Container([
                         ),
 
                         # 🔹 TITOLO (sopra tutto)
-                        html.H5("📊 Distribuzione Incubatori per Categoria", style={
+                        html.H5("Pie Chart per Categoria", style={
                             "textAlign": "center",
                             "marginBottom": "8px",
                             "marginTop": "5px"
