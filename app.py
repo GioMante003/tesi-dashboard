@@ -291,7 +291,7 @@ app.layout = dbc.Container([
                                     body=True,
                                     children=html.Div(id="testo_legenda"),
                                     trigger="hover",
-                                    placement="right",
+                                    placement="left",
                                     is_open=False
                                 ),
                     html.Div(
