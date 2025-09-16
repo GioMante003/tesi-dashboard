@@ -795,7 +795,7 @@ def aggiorna_timeline(_, area_sel):
     timeline_df['cumulato'] = timeline_df.groupby('evento')['count'].cumsum()
 
     nome_evento = {
-        'data iscrizione alla sezione degli incubatori': '📘 Iscrizione Incubatori',
+        'data iscrizione alla sezione degli incubatori': '📘 Ottenimento Certificazione',
         'data iscrizione al Registro Imprese': '🏛️ Registro Imprese',
         "data inizio dell'esercizio effettivo dell'attività": '🚀 Inizio Attività'
     }
